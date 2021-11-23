@@ -12,9 +12,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Welcome!" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          This is my first go with <code>next.js</code>
         </p>
       </main>
 
