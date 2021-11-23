@@ -6,7 +6,8 @@
   package = "@netlify/plugin-nextjs"
 
 [[redirects]]
-  from = "www.saltspell.io/about"
-  to = "/https://www.google.com/search?q=anything"
+  from = "/about"
+  to = "https://www.google.com/search?q=anything"
   status = 301
   force = true
+  headers = {X-From = "Netlify"}
