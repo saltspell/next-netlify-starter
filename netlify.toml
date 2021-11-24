@@ -6,7 +6,7 @@
   package = "@netlify/plugin-nextjs"
 
 [[redirects]]
-  from = "/about"
+  from = "/pages/about"
   to = "https://www.google.com/search?q=anything"
   status = 301
   force = true
