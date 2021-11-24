@@ -26,7 +26,9 @@ export default function technicalexercise() {
                 Be honest! “It sucked” isn’t a wrong answer unless you don’t elaborate and provide some constructive criticism ;)</i></p>
             <h3>Response:</h3>
             <p>* I did try several other templates located <a href="https://jamstack.org/generators/">on the jamstack.org/generators</a> page, however, the few others I tried failed to deploy out-of-the-box.</p>
-            <p>* After briefly looking at the Deploy Log, I see a lot of <code>npm WARN old lockfile</code> warnings and several version conflicts. I am guessing a bit here, but it appears that when the deployment container is assigned, it pulls in the latest packages available and depending on when the template was originally written, this may be causing several version conflicts, which would result in the deployment failing. </p>
+            <p>* After briefly looking at the Deploy Log, I see a lot of <code>npm WARN old lockfile</code> warnings and several version conflicts. I am guessing a bit here, but it appears that when the deployment container is assigned, it pulls in the latest packages 
+            available on spin-up. My theory is that depending on when the template was originally written, the original dependencies may be outdated and causing several version conflicts, which could result in the deployment failing. </p>
+            <p>* What impresses me is just being able to view the Deploy Log! </p>
 
 
             <h2>Question 3:</h2>
@@ -35,7 +37,7 @@ export default function technicalexercise() {
             <h4>Favorites!</h4>
             <p>1. -Spot trends across many cases to improve Netlify's product and service. </p>
             <p>2. -Help train and onboard new support teammates.</p>
-            <p>3. -Debut a customer's build using a programming language and framework that I have never seen before.</p>
+            <p>3. -Debug a customer's build using a programming language and framework that I have never seen before.</p>
             <p>4. -Help manage communications during a service outage.</p>
             <p>5. -Set up my own copy of several static site frameworks for debugging.</p>
 
@@ -59,7 +61,10 @@ export default function technicalexercise() {
             <h2>Question 6:</h2>
             <p><i>Explain, in a couple of paragraphs, what you think 2 major challenges around DNS configuration are for less-technical customers hosting websites.</i></p>
             <h3>Response:</h3>
-            <p>*  </p>
+            <p>* One of the first challenges I see less-technical customers encounter with DNS is when they first register their domain with an External DNS registrar.
+                Quite often, it is extremely easy to shop different domain registrars, find the domain name you want at a price point that is appealing and then purchase the domain successfully. However,
+                the challenge quickly becomes how to configure your DNS to work with your email and website hosting should you choose to not use the registrar's offerings for either one. Some services are good about writing
+                documentation and help articles with screenshots of how to configure for specific DNS providers. Others, not so much. Then, the challenges continue if one is attempting to update DNS records correctly to account for CDN, external load balancers,  </p>
             
             <h2>Question 7:</h2>
             <p><i>A customer writes in saying their “site won’t build”. You have access to their build logs, and there you see this error:</i></p> 
@@ -71,10 +76,12 @@ export default function technicalexercise() {
             <h2>Question 8:</h2>
             <p><i>How would you set up an http 301 status redirect from “/netlify/anything” on your site, to <a href="https://www.google.com/search?q=anything">https://www.google.com/search{'>'}q=anything</a> How about a proxy redirect? Please add that proxy redirect rule to your site.</i></p>
             <h3>Response:</h3>
-            <p>*  </p>
+            <p>* Well, I attempted to add a 301 redirect by adding it to my site's <code>netlify.toml</code> file after reading <a href="https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/">blog post</a>. 
+            However this does not seem to be working for me as I thought it would. </p>
             
             <h2>Question 9:</h2>
-            <p><i>Please attempt to deploy a function on our service. This need not be complicated, could be "Hello World" or something fancier. Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot, instead. We won't be asking you to share the function (but you can if you want to!), we just want to hear about the experience in some detail.</i></p>
+            <p><i>Please attempt to deploy a function on our service. This need not be complicated, could be "Hello World" or something fancier. Note that failure to deploy is not failing the exercise! 
+                Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot, instead. We won't be asking you to share the function (but you can if you want to!), we just want to hear about the experience in some detail.</i></p>
             <h3>Response:</h3>
             <p>*  </p>
             
