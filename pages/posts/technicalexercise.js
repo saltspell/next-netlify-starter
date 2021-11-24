@@ -14,7 +14,7 @@ export default function technicalexercise() {
                 Briefly explain one challenge you experienced in setting up this site and how you solved it.</i></p>
             <h3>Response:</h3>
             <p>* The initial deployment of my site went very smoothly on Netlify. Granted, I am using one of the most 
-                basic templates out there for <code>Next.js</code>. But that doesn't matter. It was fun just to deploy this!</p>
+                basic templates out there for <b>Next.js</b>. But that doesn't matter. It was fun just to deploy this!</p>
             <p>* I chose a template for <code>Next.js</code>because I have never worked with it before and I wanted to understand how page Linking functioned, in particular. 
             I also wanted to use a template that had very few options so as not to get too distracted with trying to make this website flashy and allow myself some time to become a bit accustomed to <b>Next.js</b>. </p>
             <p>* One challenge I ran into was with the DNS setup for an apex domain. I already had a domain parked and I am not using Netlify DNS for this site. 
@@ -166,7 +166,8 @@ export default function technicalexercise() {
             <h2>Question 11:</h2>
             <p><i>(optional/bonus) Could you give us a suggestion to improve this test or the job posting?</i></p>
             <h3>Response:</h3>
-            <p>*  </p>
+            <p>* My only feedback is I find this technical exercise very balanced between working with the Netlify platform and authoring responses to the scenarios provided. Please do keep this balanced approach in this technical exercise! I feel it matches the job posting very well. 
+                OH! And the 30/60/90 day plan listed right in the job listing is something I greatly appreciate and find most valuable! Thank you! </p>
       
 
 
