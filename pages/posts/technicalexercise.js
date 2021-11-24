@@ -31,7 +31,7 @@ export default function technicalexercise() {
             available on spin-up. My theory is that depending on when the template was originally written, the original dependencies may be outdated and causing several version conflicts, which could result in the deployment failing. </p>
             <p>* What impresses me is just being able to view the Deploy Log! It is timestamped. You can copy the entire log to clipboard. There are quick keys
                 for the head and tail. There is even a suggestion to enable essential features based on the framework of my deployment. I'm hesitant to suggest anything because overcomplicating this could have diminishing returns on user experience. 
-                The only possible suggestion here for the Deploy Page would be to maybe add documentation links as suggestions when/if a build failure is encountered. It would really depend on how that would be implemented to avoid cluttering up the Deploys Page. 
+                The only possible suggestion here might be for the Deploy Page. I wonder if it would be helpful to add documentation links as suggestions when/if a build failure is encountered. It would really depend on how that would be implemented to avoid cluttering up the Page, though. 
             </p>
 
 
@@ -169,7 +169,7 @@ export default function technicalexercise() {
             <h2>Question 11:</h2>
             <p><i>(optional/bonus) Could you give us a suggestion to improve this test or the job posting?</i></p>
             <h3>Response:</h3>
-            <p>* My only feedback is I find this technical exercise very balanced between working with the Netlify platform and authoring responses to the scenarios provided. Please do keep this balanced approach in this technical exercise! I feel it matches the job posting very well. 
+            <p>* At this time, I don't really have a suggestion to improve this test. I find this entire exercise to be very balanced between working with the Netlify platform and authoring responses for the scenarios provided. Please do keep this balanced approach as I feel it matches the job posting quite well! No matter the outcome, I did find this test/technical exercise quite a lot of fun. 
                 OH! And the 30/60/90 day plan listed right in the job listing is something I greatly appreciate and find most valuable! Thank you! </p>
       
 
