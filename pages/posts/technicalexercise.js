@@ -52,6 +52,8 @@ export default function technicalexercise() {
             <p>-4. -Work with prospective customers to explain our service and the pricing model. (This is mostly just the pricing model portion that I am not a fan of explaining.)</p>
             <p>-5. -Manage a Support Team </p>
 
+            
+            
             <h2>Question 4:</h2>
             <p><i>Provide a link to documentation for a technical/developer-focused product, which you think are well done, and explain why you think they are well done.</i></p>
             <h3>Response:</h3>
@@ -60,10 +62,12 @@ export default function technicalexercise() {
             <p>* The code snippets are clear and functional.</p>
             <p>* The use of screenshots are applicable and not overdone.</p>
             <p>* Each of the experiments have clear goals and expectations written out in a conversational, easy to follow format. The author also does
-                a great job of listing a few "gotchas" to watch out for, such as letting you know that if a dashboard does not populate immediately, it may be due to 
-                waiting for containers to spin up. I feel that it's little things like that in documentation which makes a reader feel engaged and helps to keep from feeling lost. 
+                a great job of listing a few "gotchas" to watch out for, such as letting you know that if a dashboard does not populate on the first load, it may be due to 
+                waiting for containers to spin up. I feel that it's little things like this in documentation which helps make a reader feel engaged and from feeling lost. 
             </p>
 
+            
+            
             <h2>Question 5:</h2>
             <p><i>Why do you think SSL/HTTPS is important? Please provide at least 3 reasons.</i></p>
             <h3>Response:</h3>
@@ -76,6 +80,8 @@ export default function technicalexercise() {
                 that this connection is secure and encrypted. 
             </p>
             
+           
+           
             <h2>Question 6:</h2>
             <p><i>Explain, in a couple of paragraphs, what you think 2 major challenges around DNS configuration are for less-technical customers hosting websites.</i></p>
             <h3>Response:</h3>
@@ -88,33 +94,75 @@ export default function technicalexercise() {
                 issued to a cluster of web servers running behind a load balancer. Reference: <a href="https://letsencrypt.org/docs/">https://letsencrypt.org/how-it-works/</a> Knowing exactly which type of DNS records to add to a site in order
                 for DNS validation to occur can be a daunting task if there is not clear documentation to follow. </p>
             
+            
+            
             <h2>Question 7:</h2>
             <p><i>A customer writes in saying their “site won’t build”. You have access to their build logs, and there you see this error:</i></p> 
             <p><code>Build failed due to a user error: Build script returned non-zero exit code: 2. </code></p>
             <p><i>You have no more information than this and the site’s source repository is private so you cannot test the build yourself. How would you troubleshoot this issue? Please compose your best customer-facing answer.</i></p>
             <h3>Response:</h3>
-            <p>*  </p>
+                        <p>* "Hello,  </p>
+            <p>Thank you for contacting Netlify Support. I'm sorry to hear you are encountering a build failure and will help you to resolve this issue. While your site source is private, we do have some internal logging of the attempted build deployment that can give me some clues as to what might be happening. </p>
+            <p>What I found was an error message <code>Build script returned non-zero exit code:2</code> for the most recent build attempt. Could you answer the following questions to help us in our investigation? </p>
+            <p>* Are you attempting to publish this build via a Continous Integration (CI) tool such as Travis CI or Github Actions? If so, this <a href="https://answers.netlify.com/t/new-ci-true-build-configuration-treating-warnings-as-errors-because-process-env-ci-true/14434">Support Article</a> on settings unique to CI is helpful. For instance, it may be necessary to adjust your build command to <b>CI= npm run build</b>.</p>
+            <p>* Does your site successfully build in your local environment?</p>
+            <p>* If your answer is a "No" to the above questions, would you be willing to enable debug mode and attempt your build again? </p>
+            <p>    This is done in the Netlify UI by setting the environment variable <b>NETLIFY_BUILD_DEBUG</b> to <b>true</b></p> (More on this can be found in our Support Guide <a href="https://answers.netlify.com/t/support-guide-frequently-encountered-problems-during-builds/213#before-you-begin-switch-on-debug-mode-2">here</a>)
+            <p>I look forward to your response and in assisting you to resolve this issue.</p>
+            <p>Best Regards,</p>
+            <p>Netlify Support"</p>
+           
             
             <h2>Question 8:</h2>
             <p><i>How would you set up an http 301 status redirect from “/netlify/anything” on your site, to <a href="https://www.google.com/search?q=anything">https://www.google.com/search{'>'}q=anything</a> How about a proxy redirect? Please add that proxy redirect rule to your site.</i></p>
             <h3>Response:</h3>
             <p>* Well, I attempted to add a 301 redirect by adding it to my site's <code>netlify.toml</code> file after reading <a href="https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/">blog post</a>. 
             However this does not seem to be working for me as I thought it would. I do see this loaded successfully in my deploy log, however, when I visit www.saltspell.io/about it does not redirect as I expected. I suspect this 
-            might be due to a  <code>Next.js</code>  setting that I have not accounted for on my website.</p>
+            might be due to a <b>Next.js</b> setting that I have not accounted for on my website.</p>
             
+
+
             <h2>Question 9:</h2>
             <p><i>Please attempt to deploy a function on our service. This need not be complicated, could be "Hello World" or something fancier. Note that failure to deploy is not failing the exercise! 
                 Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot, instead. We won't be asking you to share the function (but you can if you want to!), we just want to hear about the experience in some detail.</i></p>
             <h3>Response:</h3>
             <p>*  </p>
             
+
+
             <h2>Question 10:</h2>
             <p><i>We understand you don't know anything about our internal procedures at this stage, but we want you to explain at a high level how you'd react to this situation: 
                 You receive a report of a severe security issue on www.netlify.com. You can't immediately confirm, so what steps might you take to investigate or substantiate the report? What might you say to the reporter, even though 
                 we haven't confirmed their assertion yet, that will still leave the true impression that our business is very concerned about security? You believe there is a reasonable chance the report is correct and the problem is very large and impactful. How might you escalate?</i></p>
             <h3>Response:</h3>
-            <p>*  </p>
+            <h4>My internal response:</h4> I would reach out to my manager and any other leadership as well as alert our Security Team of this potential security risk. I would then provide the following potential response
+                as a draft to those same individuals to seek approval before sending. 
+            <h4>My public response:</h4> Would be the following:
+            <p>"Hello, </p>
+            <p>-Thank you for contacting Netlify Support and bringing this security issue to our attention. The security of our services, website, and customers is of the utmost importance to us and we fully investigate all issues with the highest priority. To help us in our investigation, we do have a few questions that we 
+                hope you will answer for us.</p> 
+                <p>Could you list the steps you performed to identify or encounter this issue? Would you be willing to provide us with any relevant screenshots? When did you first encounter this issue?</p>
+                
+                <p>Again, thank you for taking the time to report this matter to us. We may reach out again with additional questions. </p>
+                
+                <p>Best regards, </p>
+                <p>Netlify Support"</p>
+           
+            <h4>Side Note:</h4> 
+            <p>I was reviewing the main <a href="https://www.netlify.com/">Netlify Website</a> and discovered the link for reporting "Abuse" at the very 
+            bottom of the page does not seem to be formatted correctly.</p>
+
+            <p>It looks like its intention is to generate an email but it instead will 
+            open a new browser tab with a title heading of:</p>
+
+
             
+            <p> 
+                <b>mailto:fraud@netlify.com?subject=Abuse%20report&body=Please%20include%20the%20site%20URL%20and%20reason%20for%20your%20report%2C%20and%20we%20will%20reply%20promptly.</b>
+                
+                </p>
+
+
             <h2>Question 11:</h2>
             <p><i>(optional/bonus) Could you give us a suggestion to improve this test or the job posting?</i></p>
             <h3>Response:</h3>
