@@ -15,7 +15,8 @@ export default function technicalexercise() {
             <h3>Response:</h3>
             <p>* The initial deployment of my site went very smoothly on Netlify. Granted, I am using one of the most 
                 basic templates out there for <code>Next.js</code>. But that doesn't matter. It was fun just to deploy this!</p>
-            <p>* I chose a template for <code>Next.js</code>because I have never worked with it before and I wanted to understand how the page Linking functioned, in particular.</p>
+            <p>* I chose a template for <code>Next.js</code>because I have never worked with it before and I wanted to understand how page Linking functioned, in particular. 
+            I also wanted to use a template that had very few options so as not to get too distracted with trying to make this website flashy and allow myself some time to become a bit accustomed to <b>Next.js</b>. </p>
             <p>* One challenge I ran into was with the DNS setup for an apex domain. I already had a domain parked and I am not using Netlify DNS for this site. 
                 Normally, I would have set the `www` as the subdomain but the <a href="https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#apex-domains-and-www-subdomains">Netlify documentation</a> specifically states when using external DNS, 
                 it is <b>strongly recommended</b> to set the `www` subdomain as the primary domain. I likely saved myself from hours of troubleshooting DNS issues by reading the documentation! :gratitude:
@@ -30,8 +31,7 @@ export default function technicalexercise() {
             available on spin-up. My theory is that depending on when the template was originally written, the original dependencies may be outdated and causing several version conflicts, which could result in the deployment failing. </p>
             <p>* What impresses me is just being able to view the Deploy Log! It is timestamped. You can copy the entire log to clipboard. There are quick keys
                 for the head and tail. There is even a suggestion to enable essential features based on the framework based upon my deploy. I'm hesitant to suggest anything because overcomplicating this could have diminishing returns on user experience. 
-                The only possible suggestion here for the Deploy Page would be to maybe add documentation links as suggestions when/if a build failure is encountered. I don't know, though. That may just 
-                clutter the page up too much. 
+                The only possible suggestion here for the Deploy Page would be to maybe add documentation links as suggestions when/if a build failure is encountered. It would really depend on how that would be implemented to avoid cluttering up the Deploys Page. 
             </p>
 
 
@@ -55,7 +55,14 @@ export default function technicalexercise() {
             <h2>Question 4:</h2>
             <p><i>Provide a link to documentation for a technical/developer-focused product, which you think are well done, and explain why you think they are well done.</i></p>
             <h3>Response:</h3>
-            <p>*  </p>
+            <p>* I've been a fan of how Gremlin organizes and authors their documentation. Here is an example: <a href="https://www.gremlin.com/community/tutorials/chaos-engineering-on-docker-swarm-with-gremlin-and-datadog/">Chaos Engineering on Docker Swarm with Gremlin and Datadog</a></p>
+            <p>* The left side navigation is simple and effective with section titles that link to anchors within the document.</p>
+            <p>* The code snippets are clear and functional.</p>
+            <p>* The use of screenshots are applicable and not overdone.</p>
+            <p>* Each of the experiments have clear goals and expectations written out in a conversational, easy to follow format. The author also does
+                a great job of listing a few "gotchas" to watch out for, such as letting you know that if a dashboard does not populate immediately, it may be due to 
+                waiting for containers to spin up. I feel that it's little things like that in documentation which makes a reader feel engaged and helps to keep from feeling lost. 
+            </p>
 
             <h2>Question 5:</h2>
             <p><i>Why do you think SSL/HTTPS is important? Please provide at least 3 reasons.</i></p>
@@ -92,7 +99,7 @@ export default function technicalexercise() {
             <h3>Response:</h3>
             <p>* Well, I attempted to add a 301 redirect by adding it to my site's <code>netlify.toml</code> file after reading <a href="https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/">blog post</a>. 
             However this does not seem to be working for me as I thought it would. I do see this loaded successfully in my deploy log, however, when I visit www.saltspell.io/about it does not redirect as I expected. I suspect this 
-            might be due to a <code>Next.js</code> setting that I have not accounted for on my website.</p>
+            might be due to a  <code>Next.js</code>  setting that I have not accounted for on my website.</p>
             
             <h2>Question 9:</h2>
             <p><i>Please attempt to deploy a function on our service. This need not be complicated, could be "Hello World" or something fancier. Note that failure to deploy is not failing the exercise! 
