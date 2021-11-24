@@ -30,7 +30,7 @@ export default function technicalexercise() {
             <p>* After briefly looking at the Deploy Log, I see a lot of <code>npm WARN old lockfile</code> warnings and several version conflicts. I am guessing a bit here, but it appears that when the deployment container is assigned, it pulls in the latest packages 
             available on spin-up. My theory is that depending on when the template was originally written, the original dependencies may be outdated and causing several version conflicts, which could result in the deployment failing. </p>
             <p>* What impresses me is just being able to view the Deploy Log! It is timestamped. You can copy the entire log to clipboard. There are quick keys
-                for the head and tail. There is even a suggestion to enable essential features based on the framework based upon my deploy. I'm hesitant to suggest anything because overcomplicating this could have diminishing returns on user experience. 
+                for the head and tail. There is even a suggestion to enable essential features based on the framework of my deployment. I'm hesitant to suggest anything because overcomplicating this could have diminishing returns on user experience. 
                 The only possible suggestion here for the Deploy Page would be to maybe add documentation links as suggestions when/if a build failure is encountered. It would really depend on how that would be implemented to avoid cluttering up the Deploys Page. 
             </p>
 
@@ -67,11 +67,11 @@ export default function technicalexercise() {
             <h2>Question 5:</h2>
             <p><i>Why do you think SSL/HTTPS is important? Please provide at least 3 reasons.</i></p>
             <h3>Response:</h3>
-            <p>* In a word: Authenticity. Having a website with an assigned, valid SSL certificate communicates to any visitors of your website 
+            <p>* In a word: <b>Authenticity.</b> Having a website with an assigned, valid SSL certificate communicates to any visitors of your website 
                 that the website domain is valid and your site is, in fact, the one they intended to be visiting. Which leads to my next point.</p>
-            <p>* Security. An SSL certificate allows for a secure session to be established which allows for encrypted communication to occur. This is crucial if I am attempting to run an ecommerce 
+            <p>* <b>Security.</b> An SSL certificate allows for a secure session to be established which allows for encrypted communication to occur. This is crucial if I am attempting to run an ecommerce 
                 site. </p>
-            <p>* Privacy/Data Integrity. Having a secured connection between a web server and browser minimizes the risk of data being intercepted or 
+            <p>* <b>Privacy/Data Integrity.</b> Having a secured connection between a web server and browser minimizes the risk of data being intercepted or 
                 tampered with while in transit. This is again crucial where visitors and/or customers of a website are inputing their personal data. A customer being able to see "HTTPS" in the address line of the website communicates
                 that this connection is secure and encrypted. 
             </p>
@@ -85,7 +85,8 @@ export default function technicalexercise() {
                 documentation and help articles with screenshots of how to configure for more commonly used services.  </p>
 
             <p>* Additionally, the challenges of administering DNS records can also hinder obtaining an SSL certificate for a website. DNS validation is crucial for SSL certificate issuance because it allows for a certificate to be 
-                issued to a cluster of web servers running behind a load balancer. Reference: <a href="https://letsencrypt.org/docs/">https://letsencrypt.org/how-it-works/</a> </p>
+                issued to a cluster of web servers running behind a load balancer. Reference: <a href="https://letsencrypt.org/docs/">https://letsencrypt.org/how-it-works/</a> Knowing exactly which type of DNS records to add to a site in order
+                for DNS validation to occur can be a daunting task if there is not clear documentation to follow. </p>
             
             <h2>Question 7:</h2>
             <p><i>A customer writes in saying their “site won’t build”. You have access to their build logs, and there you see this error:</i></p> 
