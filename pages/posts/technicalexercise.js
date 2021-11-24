@@ -116,9 +116,12 @@ export default function technicalexercise() {
             <h2>Question 8:</h2>
             <p><i>How would you set up an http 301 status redirect from “/netlify/anything” on your site, to <a href="https://www.google.com/search?q=anything">https://www.google.com/search{'>'}q=anything</a> How about a proxy redirect? Please add that proxy redirect rule to your site.</i></p>
             <h3>Response:</h3>
-            <p>* Well, I attempted to add a 301 redirect by adding it to my site's <code>netlify.toml</code> file after reading <a href="https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/">blog post</a>. 
+            <p>* Well, I attempted to add a 301 redirect for my <b> About</b> page by adding it to my site's <code>netlify.toml</code> file after reading <a href="https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/">blog post</a>. 
             However this does not seem to be working for me as I thought it would. I do see this loaded successfully in my deploy log, however, when I visit www.saltspell.io/about it does not redirect as I expected. I suspect this 
             might be due to a <b>Next.js</b> setting that I have not accounted for on my website.</p>
+            <p><b>UPDATE:</b></p> - I got this to work! I had originally just added <b>/about</b> in my <b>netlify.toml</b> file as the page to redirect. After looking at this more closely, 
+            I realized I needed to add <b>/posts/about</b> . After updating this to
+            the correct page in my <b>.toml</b> file, this now works: <a href="https://www.saltspell.io/about">https://www.saltspell.io/about</a>
             
 
 
