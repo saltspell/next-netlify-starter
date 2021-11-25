@@ -121,7 +121,7 @@ export default function technicalexercise() {
             might be due to a <b>Next.js</b> setting that I have not accounted for on my website.</p>
             <p><b>UPDATE:</b></p> - I got this to work! I had originally just added <b>/about</b> in my <b>netlify.toml</b> file as the page to redirect. After looking at this more closely, 
             I realized I needed to add <b>/posts/about</b>. After updating this to
-            the correct page in my <b>.toml</b> file, this now works: <a href="https://www.saltspell.io/about">https://www.saltspell.io/about</a>
+            the correct page in my <b>.toml</b> file, this now works: <a href="https://www.saltspell.io/pages/about">https://www.saltspell.io/pages/about</a>
             
 
 
