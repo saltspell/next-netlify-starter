@@ -130,15 +130,15 @@ export default function technicalexercise() {
                 Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot, instead. We won't be asking you to share the function (but you can if you want to!), we just want to hear about the experience in some detail.</i></p>
             <h3>Response:</h3>
             <p>* I must admit, I saved this one for last and now I am regretting doing so. When I initially scoped out this task and quickly reviewed some of the <a href="https://docs.netlify.com/functions/configure-and-deploy/">documentation available on Functions,</a> I thought, "Oh, that is relatively straight forward. I'll leave this one for last."</p>
-            <p>* On reviewing the prerequisites for <a href="https://docs.netlify.com/functions/configure-and-deploy/">configuring the functions folder</a>, I realized I do NOT have a <b>Base Directory</b> set in my Site Settings! I find this extremely baffling and it
+            <p>* On reviewing the prerequisites for <a href="https://docs.netlify.com/functions/configure-and-deploy/">configuring the functions folder</a>, I suddenly realized I do NOT have a <b>Base Directory</b> set in my Site Settings! I find this extremely baffling and it
             has led me to having more questions at this point. To be painfully honest, the first question that entered my mind was "How is this site building succesfully, thus far, if I don't have a Base directory set?!?"</p>
 
             <p>There are some great Examples and Tutorials available at <a href="https://functions.netlify.com/">https://functions.netlify.com/</a> dating back a few years! There is almost too much help in documentation to the point of overwhelming! (Not Really - but it just feels that way when one is limited on time.) I could spend days testing and trying different fun to use functions on my site, honestly, and
             I would find it all quite enjoyable. I did find the most intriguing walkthroughs and demonstrations to be on <a href="https://explorers.netlify.com/">https://explorers.netlify.com/</a></p>
             <p>What was kind of the final piece of documentation I encountered that made me think this may take much more time than I have alotted was this piece of information:</p> 
-            <p> "Though we process the files in the functions directory after running your build command, the directory is not visible over the web unless you place it in your site’s publish directory (not recommended)."</p>
+            <p><i> "Though we process the files in the functions directory after running your build command, the directory is not visible over the web unless you place it in your site’s publish directory (not recommended)."</i></p>
             <p>I initially thought I could place a functions folder in my <b>publish</b> directory to make this work, but the "not recommended" in the above documentation has made me think otherwise. It is unclear to me why this not be recommended.</p>
-            <p>Sadly, I will have to accept the fact I will leave this task for another day. My apologies.</p>
+            <p>Sadly, I will have to accept the fact I must leave this task for another day. My apologies.</p>
 
 
             <h2>Question 10:</h2>
