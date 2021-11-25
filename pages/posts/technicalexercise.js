@@ -137,7 +137,7 @@ export default function technicalexercise() {
             I would find it all quite enjoyable. I did find the most intriguing walkthroughs and demonstrations to be on <a href="https://explorers.netlify.com/">https://explorers.netlify.com/</a></p>
             <p>What was kind of the final piece of documentation I encountered that made me think this may take much more time than I have alotted was this piece of information:</p> 
             <p><i> "Though we process the files in the functions directory after running your build command, the directory is not visible over the web unless you place it in your site’s publish directory (not recommended)."</i></p>
-            <p>I initially thought I could place a functions folder in my <b>publish</b> directory to make this work, but the "not recommended" in the above documentation has made me think otherwise. It is unclear to me why this not be recommended.</p>
+            <p>I initially thought I could place a functions folder in my <b>publish</b> directory to make this work, but the "not recommended" in the above documentation has made me think otherwise. At time, it is unclear to me why this is not a recommended method.</p>
             <p>Sadly, I will have to accept the fact I must leave this task for another day. My apologies.</p>
 
 
