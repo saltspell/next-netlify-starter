@@ -120,7 +120,7 @@ export default function technicalexercise() {
             However this does not seem to be working for me as I thought it would. I do see this loaded successfully in my deploy log, however, when I visit www.saltspell.io/about it does not redirect as I expected. I suspect this 
             might be due to a <b>Next.js</b> setting that I have not accounted for on my website.</p>
             <p><b>UPDATE:</b></p> - I got this to work! I had originally just added <b>/about</b> in my <b>netlify.toml</b> file as the page to redirect. After looking at this more closely, 
-            I realized I needed to add <b>/posts/about</b> . After updating this to
+            I realized I needed to add <b>/posts/about</b>. After updating this to
             the correct page in my <b>.toml</b> file, this now works: <a href="https://www.saltspell.io/about">https://www.saltspell.io/about</a>
             
 
@@ -131,7 +131,7 @@ export default function technicalexercise() {
             <h3>Response:</h3>
             <p>* I must admit, I saved this one for last and now I am regretting doing so. When I initially scoped out this task and quickly reviewed some of the <a href="https://docs.netlify.com/functions/configure-and-deploy/">documentation available on Functions,</a> I thought, "Oh, that is relatively straight forward. I'll leave this one for last."</p>
             <p>* On reviewing the prerequisites for <a href="https://docs.netlify.com/functions/configure-and-deploy/">configuring the functions folder</a>, I suddenly realized I do NOT have a <b>Base Directory</b> set in my Site Settings! I find this extremely baffling and it
-            has led me to having more questions at this point. To be painfully honest, the first question that entered my mind was "How is this site building succesfully, thus far, if I don't have a Base directory set?!?"</p>
+            has led me to having more questions at this point. To be painfully honest, the first question that entered my mind was "How is this site building successfully, thus far, if I don't have a Base directory set?!?"</p>
 
             <p>There are some great Examples and Tutorials available at <a href="https://functions.netlify.com/">https://functions.netlify.com/</a> dating back a few years! There is almost too much help in documentation to the point of overwhelming! (Not Really - but it just feels that way when one is limited on time.) I could spend days testing and trying different fun to use functions on my site, honestly, and
             I would find it all quite enjoyable. I did find the most intriguing walkthroughs and demonstrations to be on <a href="https://explorers.netlify.com/">https://explorers.netlify.com/</a></p>
