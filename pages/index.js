@@ -20,7 +20,7 @@ export default function Home() {
 
       <h1 className="title">
       Read{' '}
-      <Link href="/posts/technicalexercise">
+      <Link href="/posts/justapost">
         <a>this page!</a>
         </Link>
       </h1>
