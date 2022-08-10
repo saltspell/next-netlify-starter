@@ -16,9 +16,7 @@ export default function Home() {
         <p className="description">
           This is just a test site using <code>next.js</code>
         </p>
-        <p> className="timestamp"
-          date +%s
-        </p>
+        
       </main>
 
       <h1 className="title">
