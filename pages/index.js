@@ -14,7 +14,10 @@ export default function Home() {
       <main>
         <Header title="Welcome!" />
         <p className="description">
-          This is my first go with <code>next.js</code>
+          This is just a test site using <code>next.js</code>
+        </p>
+        <p> className="timestamp"
+          date +%s
         </p>
       </main>
 
