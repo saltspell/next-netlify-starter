@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <Header title="Welcome!" />
         <p className="description">
-          This is just a rough test site using <code>next.js</code>
+          This is just a real rough test site using <code>next.js</code>
         </p>
         
       </main>
