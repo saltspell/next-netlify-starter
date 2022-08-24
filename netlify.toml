@@ -11,3 +11,14 @@
   status = 301
   force = true
   headers = {X-From = "Netlify"}
+
+# testing proxying to a builder function for ticket https://netlify.zendesk.com/agent/tickets/103836
+[[redirects]]
+from = "/builder-proxy"
+to = "https://regal-moxie-7cfebd.netlify.app/.netlify/builders/showtime2"
+status = 200
+
+[[redirects]]
+from = "/builder-proxy-indirect"
+to = "https://regal-moxie-7cfebd.netlify.app/showtime2"
+status = 200
