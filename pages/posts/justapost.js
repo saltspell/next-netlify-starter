@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function technicalexercise() {
   return (
-      <>
+      <> Hi! 
 
 
 
